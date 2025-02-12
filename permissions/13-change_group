@@ -1,2 +1,2 @@
 #!/bin/bash
-exec 3< <(chgrp school ./hello)
+chgrp school hello
