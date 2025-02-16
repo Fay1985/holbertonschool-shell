@@ -1,2 +1,2 @@
-#!/biin/bash
+#!/bin/bash
 echo "BEST is set to: $(export BEST="School"; echo $BEST)"
