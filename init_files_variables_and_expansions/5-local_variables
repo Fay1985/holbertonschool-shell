@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "Local Variables:\n$(declare -p | grep -v '^declare \-[fxr]')\n\nEnvironment Variables:\n$(export -p)\n\nFunctions:\n$(declare -F)"
+printf "Local Variables:\n%s\n\nEnvironment Variables:\n%s\n\nFunctions:\n%s\n" "$(declare -p | grep -v '^declare \-[fxr]')" "$(export -p)" "$(declare -F)"
